@@ -3,7 +3,7 @@ import portrait from "../assets/portrait.jpg";
 
 const Acceuil = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10 mx-5">
+    <div className="bg-base-200 flex flex-col-reverse md:flex-row justify-center items-center md:py-32 py-10 px-5">
       <div>
         <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left mt-4 md:mt-0">
           Bonjour, <br /> je suis{" "}
