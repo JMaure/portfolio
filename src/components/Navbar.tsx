@@ -31,19 +31,22 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <div className="flex space-x-3">
-        <Link href="https://github.com/JMaure">
+      <div className="flex">
+        <Link href="https://github.com/JMaure" className="btn btn-sm btn-ghost">
           <Image
             src={imgGITHUB}
             alt="github"
-            className="object-cover w-6 h-6"
+            className="object-cover w-7 h-7"
           />
         </Link>
-        <Link href="https://www.linkedin.com/in/julien-maur%C3%A9-9b0b8b255/">
+        <Link
+          href="https://www.linkedin.com/in/julien-maur%C3%A9-9b0b8b255/"
+          className="btn btn-sm btn-ghost"
+        >
           <Image
             src={imgLINKEDIN}
             alt="github"
-            className="object-cover w-6 h-6"
+            className="object-cover w-7 h-7"
           />
         </Link>
       </div>
