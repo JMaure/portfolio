@@ -7,7 +7,7 @@ const Acceuil = () => {
       <div>
         <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left mt-4 md:mt-0">
           Bonjour, <br /> je suis{" "}
-          <span className="text-accent">Julien Mauré</span>
+          <span className="text-primary">Julien Mauré</span>
         </h1>
         <h2 className="text-xl md:text-2xl text-center md:text-left mt-4">
           Développeur Full Stack

@@ -82,7 +82,7 @@ const experiences = [
 
 const Experiences = () => {
   return (
-    <div className="bg-base-200 p-10 mb-10 md:mb-20">
+    <div className="bg-base-100 p-10 mb-10 md:mb-20">
       <Title title="Expériences" />
       <div className="md:my-20 flex flex-col-reverse md:flex-row justify-center items-center">
         <div className="flex flex-wrap gap-4 justify-center items-center md:w-1/3 mt-4 md:mt-0">
