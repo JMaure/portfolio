@@ -15,11 +15,11 @@ const Navbar = () => {
             Accueil
           </a>
         </li>
-        <li>
+        {/*         <li>
           <a href="#" className="btn btn-sm btn-ghost">
             A propos
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="#" className="btn btn-sm btn-ghost">
             Mes expériences
