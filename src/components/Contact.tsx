@@ -12,23 +12,23 @@ const Contact = () => {
       <Title title="Me Contacter" />
       <div className="grid lg:grid-cols-3 gap-4">
         <Link
-          href="https://github.com/JMaure"
-          className="flex gap-2 bg-base-300 rounded-xl p-4 justify-center hover:bg-base-300/40"
-        >
-          <Image
-            src={imgGITHUB}
-            alt="github"
-            className="object-cover w-7 h-7"
-          />
-          <span className="font-bold">Julien Mauré</span>
-        </Link>
-        <Link
           href="https://www.linkedin.com/in/julien-maur%C3%A9-9b0b8b255/"
           className="flex gap-2 bg-base-300 rounded-xl p-4 justify-center hover:bg-base-300/40"
         >
           <Image
             src={imgLINKEDIN}
             alt="linkedin"
+            className="object-cover w-7 h-7"
+          />
+          <span className="font-bold">Julien Mauré</span>
+        </Link>
+        <Link
+          href="https://github.com/JMaure"
+          className="flex gap-2 bg-base-300 rounded-xl p-4 justify-center hover:bg-base-300/40"
+        >
+          <Image
+            src={imgGITHUB}
+            alt="github"
             className="object-cover w-7 h-7"
           />
           <span className="font-bold">JMaure</span>
