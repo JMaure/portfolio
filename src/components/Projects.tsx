@@ -34,7 +34,7 @@ const projects = [
     description:
       "Mon portfolio personnel, pour présenter mes projets et mes compétences. Un site créé en React pour mettre en pratique ce framework. (Vous y êtes actuellement)",
     technologies: ["React", "Tailwind CSS"],
-    demoLink: "#",
+    demoLink: "https://julien-maure.vercel.app/",
     repoLink: "https://github.com/JMaure/portfolio",
     image: portfolio,
   },
