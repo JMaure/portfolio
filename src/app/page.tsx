@@ -1,8 +1,10 @@
-import About from "@/components/About";
+/* import About from "@/components/About"; */
 import Accueil from "@/components/Accueil";
 import Experiences from "@/components/Experiences";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       {/* <About /> */}
       <Experiences />
       <Projects />
+      <Contact />
+      <Footer />
     </main>
   );
 }

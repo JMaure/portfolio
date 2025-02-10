@@ -82,7 +82,10 @@ const experiences = [
 
 const Experiences = () => {
   return (
-    <div className="bg-base-100 md:pt-20 md:pb-16 pt-10 pb-5 px-5">
+    <div
+      id="Experiences"
+      className="bg-base-100 md:pt-20 md:pb-16 pt-10 pb-5 px-5"
+    >
       <Title title="Expériences" />
       <div className="flex flex-col-reverse md:flex-row justify-center items-center">
         <div className="flex flex-wrap gap-4 justify-center items-center md:w-1/3 mt-4 md:mt-0">

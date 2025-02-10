@@ -28,7 +28,7 @@ const aboutSections = [
 
 const About = () => {
   return (
-    <div className="p-10 mb-10 md:mb-20">
+    <div id="About" className="p-10 mb-10 md:mb-20">
       <Title title="A propos" />
       <div className="md:my-20 flex justify-center items-center">
         <div className="hidden md:block">

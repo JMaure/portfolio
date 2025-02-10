@@ -42,7 +42,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="bg-base-200  md:pt-20 md:pb-16 pt-10 pb-5 px-5">
+    <div
+      id="Projects"
+      className="bg-base-200 md:pt-20 md:pb-16 pt-10 pb-5 px-5"
+    >
       <Title title="Mes Projets" />
       <div className="grid md:grid-cols-3 gap-4">
         {projects.map((project) => (

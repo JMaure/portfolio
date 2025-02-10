@@ -6,28 +6,33 @@ import imgLINKEDIN from "../assets/companies/linkedin.png";
 const Navbar = () => {
   return (
     <div className="flex justify-between md:justify-between items-center p-4">
-      <a href="#" className="font-bold text-3xl max-md:text-xl">
+      <h1 className="font-bold text-3xl max-md:text-xl">
         Julien <span className="text-primary">Mauré</span>
-      </a>
+      </h1>
       <ul className="hidden md:flex space-x-3">
         <li>
-          <a href="#" className="btn btn-sm btn-ghost">
+          <a href="#Home" className="btn btn-sm btn-ghost">
             Accueil
           </a>
         </li>
         {/*         <li>
-          <a href="#" className="btn btn-sm btn-ghost">
+          <a href="#About" className="btn btn-sm btn-ghost">
             A propos
           </a>
         </li> */}
         <li>
-          <a href="#" className="btn btn-sm btn-ghost">
-            Mes expériences
+          <a href="#Experiences" className="btn btn-sm btn-ghost">
+            Expériences
           </a>
         </li>
         <li>
-          <a href="#" className="btn btn-sm btn-ghost">
-            Mes projets
+          <a href="#Projects" className="btn btn-sm btn-ghost">
+            Projets
+          </a>
+        </li>
+        <li>
+          <a href="#Contact" className="btn btn-sm btn-ghost">
+            Contacts
           </a>
         </li>
       </ul>
