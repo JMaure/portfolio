@@ -1,32 +1,45 @@
+"use client";
+
 import Title from "./Title";
+import Project from "./Project";
 
 import gamebox from "../assets/projects/gamebox.png";
 import alumni from "../assets/projects/alumni.png";
 import portfolio from "../assets/projects/portfolio.png";
-import Image from "next/image";
-import Link from "next/link";
-import { Github } from "lucide-react";
+import { StaticImageData } from "next/image";
+/* import Link from "next/link";
+import { Github } from "lucide-react"; */
 
-const projects = [
+export type ProjectType = {
+  id: number;
+  title: string;
+  description: string;
+  technologies: string[];
+  demoLink: string;
+  repoLink: string;
+  image: StaticImageData;
+};
+
+const projects: ProjectType[] = [
   {
     id: 1,
-    title: "Site de mini jeux classiques",
-    description:
-      "Un site pour jouer  des jeux classiques tels que le morpion, le démineur et le snake. Un premier site créé en React pour mettre en pratique la découverte de ce framework",
-    technologies: ["React", "Next.js", "Tailwind CSS"],
-    demoLink: "https://game-box-one.vercel.app/",
-    repoLink: "https://github.com/JMaure/game-box",
-    image: gamebox,
-  },
-  {
-    id: 2,
-    title: "Application d'un réeau social d'anciens élèves",
+    title: "Application d'un réseau social d'anciens élèves",
     description:
       "Projet de formation POE développeur d'application mobile. Créer un réseau social privé, à l’attention des anciens des promos POE et Alternance ainsi que des nouveaux arrivants. L’idée étant de profiter de ce réseau pour promouvoir des carrières, offrir des postes, partager des expériences.",
     technologies: ["Angular", "Nest.js", "MariaDB", "MongoDB"],
     demoLink: "#",
     repoLink: "https://github.com/CoderRangers/alumni-rangers/",
     image: alumni,
+  },
+  {
+    id: 2,
+    title: "Site de mini jeux classiques",
+    description:
+      "Un site pour jouer  des jeux classiques tels que le morpion, le démineur et le snake. Un premier site créé en React pour mettre en pratique la découverte de ce framework.",
+    technologies: ["React", "Next.js", "Tailwind CSS"],
+    demoLink: "https://game-box-one.vercel.app/",
+    repoLink: "https://github.com/JMaure/game-box",
+    image: gamebox,
   },
   {
     id: 3,
@@ -48,6 +61,11 @@ const Projects = () => {
     >
       <Title title="Mes Projets" />
       <div className="grid md:grid-cols-3 gap-4">
+        {projects.map((project) => (
+          <Project key={project.id} project={project} />
+        ))}
+      </div>
+      {/* 
         {projects.map((project) => (
           <div
             key={project.id}
@@ -88,9 +106,9 @@ const Projects = () => {
                 <Github />
               </Link>
             </div>
-          </div>
+          </div> 
         ))}
-      </div>
+      */}
     </div>
   );
 };
