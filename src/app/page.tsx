@@ -8,7 +8,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="bg-base-100">
+    <main className="bg-base-100 text-base-content">
       <div className="p-5 md:px-[7%]">
         <Navbar />
       </div>
